@@ -14,7 +14,7 @@ const activity = cwd.includes('01-Activities')
 app.use(express.urlencoded({ extended: true}));
 app.use(express.json());
 app.use(express.static('public'));
-// console.log('michael', routes)
+
 app.use(routes);
 
 db.once("open", () => {
